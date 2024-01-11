@@ -1,0 +1,64 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    background-color: #fff;
+    font-size: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: center;
+}
+
+.tick-icon {
+    display: grid;
+    place-items: center;
+    margin-top: 10%;
+}
+
+.bought-art {
+    display: flex;
+    margin-left: 10%;
+    padding: 0%;
+}
+
+.payment-successful {
+    color:#2C8039;
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0px;
+}
+
+.purchased-artwork, .shipping-details {
+    color:#0b0300;
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: 400;
+    display: flex;
+    margin-right: 20%; /* Adjust the margin as needed */
+}
+
+.purchased-artwork {
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.index-button {
+    background:#DF491D;
+    border: none;
+    color: white;
+    padding: 10px 30%;  /*Adjust the padding as needed */
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20%;
+}
+
+.index-button:hover {
+    background-color: #BF3C17; /* Change the background color on hover */
+}
+
+.button {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}

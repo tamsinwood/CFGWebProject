@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase00</title>
+    <link rel="stylesheet" href="main.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="left-section">
+                <h1 class="h1-header">APRICOTS</h1>
+            </div>
+            <div class="middle-section">
+                <form class="search-form">
+                    <input type="search" id="search-input" placeholder="&#128269; Search by artist, theme, style etc.    &#10006;">
+                    <button type="button" class="clear-button" id="clear-search"></button> 
+                </form>
+            </div>
+            <div class="right-section">
+                <button class="first-button">Get started</button>
+                <button class="second-button" onclick="openLoginModal()">Login</button>
+                <div id="loginModal" class="modal">
+                    <div class="modal-header">
+                        <span class="close" onclick="closeLoginModal()">&times;</span>
+                        <h2>APRICOTS</h2>
+                    </div>
+                    <p>Don't have an account? <a href="#">Create One</a></p>
+                    <div class="input-container">
+                        <label for="email"></label>
+                        <input type="text" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="input-container">
+                        <label for="password"></label>
+                        <input type="password" id="password" placeholder="Enter your password">
+                    </div>
+                    <div class="row">
+                        <input type="checkbox" id="rememberMe" class="remember-me-checkbox">
+                        <label for="rememberMe" class="remember-me">Remember me</label>
+                        <a href="#" class="forgot-password">Forgot Password?</a>
+                    </div>
+
+                    <button class="login-button">Log In</button>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+    <nav>
+        <div class="nav">
+            <ul>
+                <li>Artists</li>
+                <li>Themes</li>
+                <li>Style</li>
+                <li>Events</li>
+            </ul>
+        </div>
+    </nav>
+
+<button class="back-button" onclick="location.href='explore.html'"> &#10094; Contemporary African Art</button>
+
+    <section>
+        <div class="slideshow-container">
+                <div class="mySlides" style="display:block;">
+                    <img src="images/purchase_images/purchase1.png" alt="Image 1">
+                </div>
+        
+                <div class="mySlides" style="display:none">
+                    <img src="images/purchase_images/purchase2.png" alt="Image 2">
+                </div>
+        
+                <div class="mySlides" style="display:none">
+                    <img src="images/purchase_images/purchase3.png" alt="Image 3">
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <div style="text-align:center">
+            <span class="dot active-dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="buttons-containers">
+            <button onclick="saveToWishlist()">&#10084; Save</button>
+            <button onclick="messageSeller()"> <i class="fa-solid fa-message"></i>Message Seller</button>
+            <button onclick="share()">Share <i class="fa-solid fa-share"></i> </a></button>
+        </div>
+
+        <div class="content-container">
+            <h4 class="author-name">Stanley Sibanda</h4>
+            <p class="featured-title">Life Goes On, 2021</p>
+            <hr class="separator-line"> 
+            <p class="featured-price">£950.00</p>
+            <button class="purchase-art" onclick="window.location.href='purchase.html'">Purchase</button>
+            <button class="make-offer" onclick="window.location.href='makeOffer.html'">Make an Offer</button>
+        </div>
+
+        <div class="art-information">
+            <h4>About the Work</h4>
+            <p>Ut dignissimos aperiam qui <br> dignissimo Quis in nulla corrupti et <br>eaque harum. Et sapiente dolor qui <br> quam molestia.</p>
+        </div>
+    </section>
+
+    <hr>
+  
+    <section>
+        <div class="event-container">
+            <div class="event">
+                <img src="images/blue-art.png" alt="ethereal art, add more descr">
+                <h3 class="h3-notbold">Artist Name </h3>
+                <p> Art Name </p> 
+                <h4>£00000</h4>
+            </div>
+            <div class="event">
+                <img src="/images/stanley-sibanda.png" alt="ethereal art, add more descr">
+                <h3 class="h3-notbold">Stanley Sibanda</h3>
+                <p> Life Goes On, 2021 </p> 
+                <h4>£10000</h4>
+            </div>
+            <div class="event">
+                <img src="images/Mali-art.png" alt="ethereal art, add more descr">
+                <h3 class="h3-notbold">Artist Name </h3>
+                <p> Art Name </p> 
+                <h4>£00000</h4>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+      
+        <div class="event-container">
+            <div class="event">
+                <img src="images/cloud-art.png" alt="ethereal art, add more descr">
+                <h3 class="h3-notbold">Artist Name </h3>
+                <p> Art Name </p> 
+                <h4>£00000</h4>
+            </div>
+            <div class="event">
+                <img src="/images/circular-ethereal-art.png" alt="ethereal art, add more descr">
+                <h3 class="h3-notbold"> Artist Name</h3>
+                <p> Art Name </p> 
+                <h4>£10000</h4>
+            </div>
+            <div class="event">
+                <img src="/images/glass-abstract.png" alt="ethereal art, add more descr">
+                <h3 class="h3-notbold"> Artist Name</h3>
+                <p> Art Name </p> 
+                <h4>£10000</h4>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+      
+        <div class="event-container">
+            <div class="event">
+                <img src="images/abstract-art.png" alt="ethereal art, add more descr">
+                <h3 class="h3-notbold">Artist Name </h3>
+                <p> Art Name </p> 
+                <h4>£00000</h4>
+            </div>
+            <div class="event">
+                <img src="images/blue-art.png" alt="ethereal art, add more descr">
+                <h3 class="h3-notbold">Artist Name </h3>
+                <p> Art Name </p> 
+                <h4>£00000</h4>
+            </div>
+            <div class="event">
+                <img src="/images/dripping-paint-art.png" alt="ethereal art, add more descr">
+                <h3 class="h3-notbold"> Artist Name</h3>
+                <p> Art Name </p> 
+                <h4>£10000</h4>
+            </div>
+        </div>
+    </section>
+    
+    <section>
+      
+        <div class="event-container">
+            <div class="event">
+                <img src="images/Mali-art.png" alt="ethereal art, add more descr">
+                <h3 class="h3-notbold">Artist Name </h3>
+                <p> Art Name </p> 
+                <h4>£00000</h4>
+            </div>
+            <div class="event">
+                <img src="/images/stanley-sibanda.png" alt="ethereal art, add more descr">
+                <h3 class="h3-notbold">Stanley Sibanda</h3>
+                <p> Life Goes On, 2021 </p> 
+                <h4>£10000</h4>
+            </div>
+            <div class="event">
+                <img src="/images/glass-abstract.png" alt="ethereal art, add more descr">
+                <h3 class="h3-notbold"> Artist Name</h3>
+                <p> Art Name </p> 
+                <h4>£10000</h4>
+            </div>
+        </div>
+    </section>  
+
+    <footer>
+        <hr>
+        
+        <div class="bottom-page">
+            <div class="left-footer">
+                <form class="signup-form">
+                    <div class="form-group">
+                        <label for="email" class="label">EMAIL ADDRESS*</label>
+                        <input type="email" id="email" placeholder="Enter Your Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday" class="label">BIRTHDAY*</label>
+                        <input type="text" id="birthday" name="birthday" pattern="\d{2}/\d{2}/\d{4}" placeholder="DD/MM/YYYY" required>
+                    </div>
+                </form>
+                <button type="submit" class="signup-button">Sign Up</button>
+    
+            </div>   
+            <div class="right-footer">
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a> <br>
+                    <a href="#">Careers</a> <br>
+                    <a href="#">Blog</a> <br>
+                    <a href="#">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="#">Visit our help center</a><br>
+                    <a href="#">Talk to a specialist</a><br>
+                </div>
+                <div class="footer-section">
+                    <h4>Get the App</h4>
+                    <a href="#">IOS App</a><br>
+                    <a href="#">Android App</a><br>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="#">Lorem ipsum</a> <br>
+                    <a href="#">Lorem ipsum</a> <br>
+                    <a href="#">Lorem ipsum</a> <br>
+                </div>
+            </div>
+        </div>
+        <div class="footerContainer">
+            <div class="socialmediaIcons">
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

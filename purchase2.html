@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase page 2</title>
+    <link rel="stylesheet" href="purchase2.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="left-section">
+                <button class="back-button" onclick="location.href='purchase.html'"><</button>
+            </div>
+            <div class="middle-section">
+                <h1 class="h1-header">Payment</h1>
+            </div>
+        </div>
+    </header>
+    
+    <div class="dividing-line">
+        <div class="rectangle1"></div>
+        <div class="rectangle2"></div>
+    </div>
+
+    <div class="form">
+        <form style="width: 90%; margin-left: 5%;" class="search-form">
+            <label class="payment-details" for="cname" style="font-weight: 600; margin-bottom: 40px;">Payment Details</label><br>
+            <label class="cname" for="cname">Card Holder</label><br>
+            <input id="cname" placeholder="Add Name"><br>
+            
+            <label class="cardnum" for="cardnum">Card Number</label><br>
+            <input type="text" id="cardnum" placeholder="Add Card Number"><br>
+
+            <label class="expiry" for="expiry">Expiry Date</label><br>
+            <input type="text" id="expiry" placeholder="MM    YYYY"><br>
+
+            <label class="ccv" for="ccv">CCV</label><br>
+            <input type="text" id="ccv" placeholder="***"><br>
+        </form>
+
+        <div style="width: 90%; margin-left: 5%;" class="search-form3">
+            <label id="carddetails-checkbox" for="carddetails">Save card details for later use
+                <input type="checkbox" id="carddetails"></input>
+                <span class="checkmark"></span>
+            </label>
+
+            <div class="rectangle3"></div>
+
+            <div class="bottom-confirmation">
+                <p class="total">TOTAL:<br>£950</p>
+    
+                <button class="continue" onclick="location.href='confirmation.html'">Pay Now</button>
+
+            </div>
+
+            <p id="shipping-inc">*SHIPPING INCLUDED</p>
+        </div>
+        
+</body>
+
+</html>

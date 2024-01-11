@@ -1,0 +1,229 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 50px;
+    margin-left: 2%;
+    width: 82%;
+}
+.left-section {
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    align-items: centre;
+}
+.middle-section {
+    flex: 6;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1-header {
+    color: var(--primary-main-400, #0b0300);
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: 900;
+    margin-right: 10px; /* Adjust the margin as needed */
+    letter-spacing: 0px;
+}
+
+.input {
+    display: flex;
+    width: 50% ;
+    padding: 2px, 2px;
+}
+
+#fname, #postalcode, #address1, #address2, #city, #state, #phonenum {
+    width: 100%;
+    height: 40px; /* Adjust the height as needed */
+    border: none;
+    border-bottom: 1.5px solid #cfcdcd;
+    padding-left: 4px;
+    margin-right: 10px; /* Adjust the margin as needed */
+    margin-bottom: 25px;
+}
+
+#phonenum {
+    margin-bottom: 5px;
+}
+
+.shipping-logistics-lab {
+    margin-bottom: 0px;
+    color: #666666;
+    width: 100%;
+    font-size: 13px;
+    height: 40px; /* Adjust the height as needed */
+    border: none;
+    margin-bottom: 25px;
+}
+
+#country {
+    width: 100%;
+    height: 40px; /* Adjust the height as needed */
+    border: none;
+    border-bottom: 1.5px solid #cfcdcd;
+    padding-left: 0px;
+    margin-right: 10px; /* Adjust the margin as needed */
+    color: #727070;
+    margin-bottom: 25px;
+}
+
+.rectangle1 {
+    height: 2px;
+    width: 45%;
+    margin-left: 5%;
+    background-color: #DF491D;
+}
+
+.rectangle2 {
+    margin-left: 50%;
+    height: 2px;
+    margin-right: 5%;
+    background-color: #CCCCCC;
+    margin-bottom: 20px;
+}
+
+.rectangle3 {
+    background-color: #CCCCCC;
+    height: 1.5px;
+}
+
+.total {
+    font-weight: 800;
+    width: 40%;
+}
+
+.clear-button {
+    background: none;
+    border: none;
+    color: #DF491D;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.continue {
+    background:#DF491D;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 60%;
+    height: 50px;
+    margin-top: 15px;
+}
+
+.continue:hover {
+    background-color: #BF3C17; /* Change the background color on hover */
+}
+
+.bottom-confirmation {
+    display: flex;
+    justify-content: centre;
+    vertical-align: top;
+    gap: 20px;
+}
+
+#shipping-inc {
+    font-size: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 200px;
+}
+
+.back-button {
+    background: white;
+    border: none;
+    color: rgb(7, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    height: 40px;
+}
+
+.back-button:hover {
+    background-color: rgb(232, 229, 229); /* Change the background color on hover */
+}
+
+/*   w3schools' code   */
+
+#shipping-checkbox {
+    display: block;
+    position: relative;
+  padding-left: 28px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 13px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+}
+
+/* Hide the browser's default checkbox */
+#shipping-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+#shipping-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+#shipping-checkbox input:checked ~ .checkmark {
+  background-color: #DF491D;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+#shipping-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+#shipping-checkbox .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*   w3schools code ends here    */
+
